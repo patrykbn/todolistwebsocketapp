@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task List</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+    </head>
+    <body>
+        <main id="app">
+            <div class="App">
+                <header>
+                    <h1>ToDoList.app</h1>
+                </header>
+                
+                <section class="tasks-section" id="tasks-section">
+                    <h2>Tasks</h2>
+                
+                    <ul class="tasks-section__list" id="taskList"></ul>
+                
+                    <form id="taskForm">
+                        <input class="text-input" autocomplete="off" type="text" placeholder="Type your description" id="taskInput" />
+                        <button class="btn" type="submit">Add</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <script src="app.js"></script>
+    </body>
+</html>
