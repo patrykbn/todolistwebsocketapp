@@ -14,7 +14,7 @@ let tasks = [
     { id: 2, name: 'Go out with a dog' }
 ];
 
-app.use(express.static(path.join(__dirname, 'client')));
+app.use(express.static(path.join(__dirname, 'client', 'build')));
 
 io.on('connection', (socket) => {
     console.log('New user connected');
@@ -36,6 +36,6 @@ io.on('connection', (socket) => {
     });
 });
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'client', 'index.html'));
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 });

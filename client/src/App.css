@@ -10,8 +10,6 @@ body {
 
 h1 {
   font-weight: lighter;
-  font-size: 2.5rem;
-  margin-bottom: 20px;
 }
 
 p {
@@ -34,7 +32,7 @@ p {
 }
 
 .btn:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
 .btn--red {
